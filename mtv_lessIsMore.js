@@ -6,8 +6,6 @@ function mtv_show_less() {
             var element = elements[i];
             var less_height = element.getAttribute('data-height') ? parseInt(element.getAttribute('data-height')) : 300;
             var elem_height = element.clientHeight;
-            console.log(elem_height);
-            console.log(less_height);
             if (elem_height > less_height) {
                 var data = element.innerHTML;
                 var new_html = '<div class="mtv-less-content" style="max-height:' + less_height + 'px;">' + data + '</div>' + mtv_show_less_div(element);
@@ -49,7 +47,7 @@ function mtv_less_is_more_css() {
     width:100%;
     text-align:center;
     position:relative;
-    padding:10px;
+    padding:15px;
 }
 .mtv_show_less{
     display:block;
