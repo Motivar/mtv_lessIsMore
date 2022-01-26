@@ -22,7 +22,7 @@ mtv_show_less();
 
 function mtv_show_less_div(elem) {
     var more_msg = elem.getAttribute('data-more') ? elem.getAttribute('data-more') : 'Read more';
-    var less_msg = elem.getAttribute('data-less') ? elem.getAttribute('data-more') : 'Show less';
+    var less_msg = elem.getAttribute('data-less') ? elem.getAttribute('data-less') : 'Show less';
     return '<div class="mtv_more_less_buttons"><div class="mtv_show_more" onclick="mtv_show_less_toggle(this);">' + more_msg + '</div><div class="mtv_show_less" onclick="mtv_show_less_toggle(this);">' + less_msg + '</div></div>';
 }
 
