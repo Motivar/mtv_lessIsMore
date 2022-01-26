@@ -2,7 +2,6 @@ function mtv_show_less() {
     var elements = document.querySelectorAll('.mtv_less');
     if (elements) {
         mtv_less_is_more_css();
-        console.log(elements);
         for (var i = 0; i < elements.length; i++) {
             var element = elements[i];
             var less_height = element.getAttribute('data-height') ? parseInt(element.getAttribute('data-height')) : 300;
